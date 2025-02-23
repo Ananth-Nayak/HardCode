@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-void pattern3(int N)
+void pattern5(int N)
 {
-  for (int i = 1; i <= N; i++)
+  for (int i = 0; i < N; i++)
   {
-    for (int j = 1; j <= i; j++)
+    for (int j = N; j > i; j--)
     {
-      cout << j << " ";
+      cout << "* ";
     }
     cout << endl;
   }
@@ -18,7 +18,6 @@ int main()
   int N;
   cout << "Enter N" << endl;
   cin >> N;
-  pattern3(N);
-
+  pattern5(N);
   return 0;
 }

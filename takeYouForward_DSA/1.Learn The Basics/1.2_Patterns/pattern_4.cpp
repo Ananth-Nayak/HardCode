@@ -3,13 +3,11 @@ using namespace std;
 
 void pattern4(int N)
 {
-  int counter = 0;
-  for (int i = 0; i < N; i++)
+  for (int i = 1; i <= N; i++)
   {
-    counter++;
-    for (int j = 0; j <= i; j++)
+    for (int j = 0; j < i; j++)
     {
-      cout << counter;
+      cout << i;
     }
     cout << endl;
   }
